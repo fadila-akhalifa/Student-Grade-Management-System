@@ -1,4 +1,4 @@
-class student:
+class Student:
     def __init__(self, name, student_id , grade):
         self.name = name 
         self.student_id = student_id
@@ -9,7 +9,7 @@ class student:
         print("Student ID:", self.student_id)
         print("Grades:", self.grade)
 
-class UndergraduateStudent(student):
+class UndergraduateStudent(Student):
     def __init__(self,name,student_id, grade ,major):
       super().__init__(name, student_id , grade)
       self.major = major
@@ -18,7 +18,7 @@ class UndergraduateStudent(student):
       super().display_info()
       print(f"Major: {self.major}")
 
-class GraduateStudent(student):
+class GraduateStudent(Student):
     def __init__(self,name, student_id ,grade , program_title):
       super().__init__(name , student_id , grade)
       self.program_title = program_title
