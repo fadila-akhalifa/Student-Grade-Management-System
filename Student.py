@@ -42,7 +42,7 @@ class Student:
 
 class UndergraduateStudent(Student):
     def __init__(self,name,student_id ,major):
-      super().__init__(name, student_id , grade)
+      super().__init__(name, student_id )
       self.major = major
 
     def display_info(self):
@@ -51,12 +51,12 @@ class UndergraduateStudent(Student):
 
 class GraduateStudent(Student):
     def __init__(self,name, student_id, program_title):
-      super().__init__(name , student_id , grade)
+      super().__init__(name , student_id)
       self.program_title = program_title
   
     def display_info(self):
       super().display_info()
-      print(f"Program title:{self.program_title}")
+      print(f"Program title: {self.program_title}")
 
 
 
