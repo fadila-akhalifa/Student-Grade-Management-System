@@ -41,7 +41,7 @@ class Student:
         print(f"Letter Grade: {self.calculate_grade()}")
 
 class UndergraduateStudent(Student):
-    def __init__(self,name,student_id, grade ,major):
+    def __init__(self,name,student_id ,major):
       super().__init__(name, student_id , grade)
       self.major = major
 
@@ -50,7 +50,7 @@ class UndergraduateStudent(Student):
       print(f"Major: {self.major}")
 
 class GraduateStudent(Student):
-    def __init__(self,name, student_id ,grade , program_title):
+    def __init__(self,name, student_id, program_title):
       super().__init__(name , student_id , grade)
       self.program_title = program_title
   
