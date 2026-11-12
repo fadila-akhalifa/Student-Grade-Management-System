@@ -58,5 +58,25 @@ class GraduateStudent(Student):
       super().display_info()
       print(f"Program title: {self.program_title}")
 
+if __name__ == "__main__":
+    Student1 = UndergraduateStudent("Fadila" , "2600" , "Electrical Engineering")
+    Student2 = GraduateStudent("Malika" , "2601" , "Mechanical Engineering")
+
+    Student1.add_grades(96)
+    Student1.add_grades(88)
+    Student1.add_grades(78)
+
+    Student2.add_grades(85)
+    Student2.add_grades(92)
+    Student2.add_grades(90)
+
+    print("--- Undergraduate Student ---")
+    Student1.display_info()
+
+    print()
+
+    print("--- Graduate Student ---")
+    Student2.display_info()
+
 
 
